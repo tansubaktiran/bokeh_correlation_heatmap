@@ -78,5 +78,6 @@ def render_correlation_plot_bokeh(my_data_frame):
             mytext = Label(x=col+0.3, y=row + 0.5, text=str(round(correlation_matrix_numpy[row, col], 2)), text_font_size="10px")
             f.add_layout(mytext)
     show(f)
+#Test your function
 render_correlation_plot_bokeh(df)
 
