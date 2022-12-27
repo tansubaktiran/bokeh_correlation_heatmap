@@ -15,7 +15,7 @@ df = pandas.read_csv("...your_path_to_your_file.../your_table_for_correlation_an
 #Checking the dataframe you loaded.
 print(df.head())
 def render_correlation_plot_bokeh(my_data_frame):
-    df_numerical = df.select_dtypes(exclude="object")
+    df_numerical = my_data_frame.select_dtypes(exclude="object")
 
     correlation_matrix = df_numerical.corr()
     
